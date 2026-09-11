@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#090806">
+  <meta name="description" content="Dauva Enterprise Royal Gold Interactive Wedding Invitation">
+  <title>Royal Gold Wedding Invitation</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div id="loader" class="loader">
+    <div class="loader-ornament">✦</div>
+    <div class="loader-brand">DAUVA INVITATION STUDIO</div>
+    <div class="loader-line"><span></span></div>
+  </div>
+
+  <div id="petals" class="petals" aria-hidden="true"></div>
+  <div class="gold-dust" aria-hidden="true"></div>
+
+  <button id="musicBtn" class="music-btn" aria-label="Play music">♫</button>
+
+  <main id="invitation">
+    <section id="opening" class="opening">
+      <div class="opening-glow"></div>
+      <div class="royal-card">
+        <div class="card-corner c1"></div><div class="card-corner c2"></div>
+        <div class="card-corner c3"></div><div class="card-corner c4"></div>
+        <div class="crest">✦</div>
+        <p class="eyebrow">YOU ARE CORDIALLY INVITED</p>
+        <div class="ornament-line"><span></span> ❦ <span></span></div>
+        <h1><span id="openGroom">Amaan</span><br><small>&amp;</small><br><span id="openBride">Ayesha</span></h1>
+        <button id="openBtn" class="gold-btn">OPEN INVITATION <span>→</span></button>
+        <p class="tap-hint">Tap to begin the celebration</p>
+      </div>
+    </section>
+
+    <section class="hero section-pad">
+      <div class="hero-frame"></div>
+      <div class="hero-content reveal">
+        <p class="eyebrow">WITH GREAT JOY &amp; BLESSINGS</p>
+        <div class="ornament-line"><span></span> ❦ <span></span></div>
+        <p class="pretitle">THE WEDDING OF</p>
+        <h2><span id="groomName">Amaan</span><i>&amp;</i><span id="brideName">Ayesha</span></h2>
+        <div class="scroll-cue">SCROLL <span>↓</span></div>
+      </div>
+    </section>
+
+    <section class="intro section-pad">
+      <div class="royal-divider reveal">❦</div>
+      <div class="narrow reveal">
+        <p class="eyebrow">A BEAUTIFUL BEGINNING</p>
+        <h3>Two hearts, one beautiful journey.</h3>
+        <p id="introText">With the blessings of our families and loved ones, we invite you to be a part of our most cherished celebration. Your presence will make our day truly unforgettable.</p>
+      </div>
+    </section>
+
+    <section class="scratch-section section-pad">
+      <div class="section-heading reveal">
+        <p class="eyebrow">YOUR LITTLE SURPRISE</p>
+        <h3>Scratch &amp; Reveal</h3>
+        <p>The wedding date is hidden inside our royal seal. Scratch it to reveal the day.</p>
+      </div>
+      <div class="scratch-wrap reveal">
+        <div class="scratch-card">
+          <div class="scratch-back">
+            <span class="mini-label">OUR SPECIAL DAY</span>
+            <strong id="scratchDate">24 DECEMBER 2026</strong>
+            <span>Save the Date ♥</span>
+          </div>
+          <canvas id="scratchCanvas" width="720" height="420"></canvas>
+        </div>
+        <p id="scratchHint" class="scratch-hint">Use your finger or mouse to scratch</p>
+      </div>
+    </section>
+
+    <section class="countdown-section section-pad">
+      <div class="section-heading reveal">
+        <p class="eyebrow">COUNTING EVERY MOMENT</p>
+        <h3>Until We Say “I Do”</h3>
+      </div>
+      <div class="countdown reveal">
+        <div><strong id="days">00</strong><span>DAYS</span></div>
+        <div><strong id="hours">00</strong><span>HOURS</span></div>
+        <div><strong id="minutes">00</strong><span>MINUTES</span></div>
+        <div><strong id="seconds">00</strong><span>SECONDS</span></div>
+      </div>
+    </section>
+
+    <section class="events section-pad">
+      <div class="section-heading reveal">
+        <p class="eyebrow">THE CELEBRATION</p>
+        <h3>Wedding Events</h3>
+        <p>Come celebrate each beautiful moment with us.</p>
+      </div>
+      <div id="eventsList" class="events-list"></div>
+    </section>
+
+    <section class="gallery section-pad">
+      <div class="section-heading reveal">
+        <p class="eyebrow">OUR MEMORIES</p>
+        <h3>Moments We Cherish</h3>
+      </div>
+      <div id="galleryGrid" class="gallery-grid"></div>
+    </section>
+
+    <section class="venue section-pad">
+      <div class="venue-card reveal">
+        <div class="venue-copy">
+          <p class="eyebrow">WHERE WE CELEBRATE</p>
+          <h3 id="venueName">The Royal Palace</h3>
+          <p id="venueAddress">Ahmedabad, Gujarat</p>
+          <p id="venueNote">We would be honoured to celebrate this special day with you.</p>
+          <a id="mapBtn" class="gold-btn outline" href="#" target="_blank" rel="noopener">OPEN GOOGLE MAPS →</a>
+        </div>
+        <div class="map-art">
+          <div class="map-grid"></div>
+          <div class="map-pin">⌖</div>
+          <span>OUR VENUE</span>
+        </div>
+      </div>
+    </section>
+
+    <section class="rsvp section-pad">
+      <div class="rsvp-box reveal">
+        <p class="eyebrow">KINDLY RESPOND</p>
+        <h3>Will You Join Us?</h3>
+        <p>Your presence is the most precious gift.</p>
+        <div class="rsvp-actions">
+          <a id="yesBtn" class="gold-btn" href="#" target="_blank" rel="noopener">✓ YES, I'LL BE THERE</a>
+          <a id="whatsappBtn" class="ghost-btn" href="#" target="_blank" rel="noopener">RSVP ON WHATSAPP</a>
+        </div>
+        <div class="guest-count">
+          <strong id="guestCount">128</strong>
+          <span>Guests have confirmed</span>
+        </div>
+      </div>
+    </section>
+
+    <section class="wishes section-pad">
+      <div class="royal-divider reveal">✦</div>
+      <div class="narrow reveal">
+        <p class="eyebrow">WITH LOVE &amp; GRATITUDE</p>
+        <h3 id="wishTitle">Your blessings mean the world to us.</h3>
+        <p id="wishText">Thank you for being a part of our story. We cannot wait to celebrate love, family and forever with you.</p>
+        <div class="signature">Amaan <span>&amp;</span> Ayesha</div>
+      </div>
+    </section>
+
+    <footer class="footer">
+      <div class="footer-mark">✦</div>
+      <p class="footer-small">DIGITAL INVITATION BY</p>
+      <a href="https://dauvaenterprise.com" target="_blank" rel="noopener">dauvaenterprise.com</a>
+      <p class="footer-contact">8799099135 &nbsp;•&nbsp; info@dauvaenterprise.com</p>
+    </footer>
+  </main>
+
+  <audio id="bgMusic" loop preload="metadata"></audio>
+<script src="config.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>

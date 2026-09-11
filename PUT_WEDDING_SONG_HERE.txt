@@ -1,0 +1,2 @@
+Rename your wedding audio file to wedding-song.mp3 and place it in this same assets folder.
+The website will play it from assets/wedding-song.mp3. No file picker is used.
